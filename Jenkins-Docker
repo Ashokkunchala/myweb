@@ -42,7 +42,7 @@ pipeline{
             steps{
                  sh 'docker build -t outlookdock/spring-boot-mongo .'
                  sh 'docker build -t tomcat:${BUILD_NUMBER} .'
-                 sh 'docker run -itd --name srini143 -p 2567:8080 tomcat:${BUILD_NUMBER}'
+                 sh 'docker run -itd --name srini144 -p 2568:8080 tomcat:${BUILD_NUMBER}'
              }
          }
         stage('Push Docker Image'){
